@@ -1,0 +1,10 @@
+services:
+  unciv-notifier:
+    image: docker.io/xpos587/unciv-notifier:latest
+    container_name: unciv-notifier
+    restart: unless-stopped
+    environment:
+      BOT_TOKEN: "7530209066:AAGtyOs-QGfIwVL4xmLFp_H2GcbNTPHRvTE"
+      CHAT_ID: -1002512791594
+      GAME_ID: "bfea7ea7-9c98-45fb-a13f-60400f9e045d"
+      CHECK_INTERVAL: 25
