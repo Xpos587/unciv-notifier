@@ -4,7 +4,20 @@ services:
     container_name: unciv-notifier
     restart: unless-stopped
     environment:
-      BOT_TOKEN: "7530209066:AAGtyOs-QGfIwVL4xmLFp_H2GcbNTPHRvTE"
+      UNCIV_GAME_ID: your-game-id
+      UNCIV_CHECK_INTERVAL: 15
+      UNCIV_COUNTRY_IROQUOIS: "@your-telegram-username"
+      UNCIV_COUNTRY_SPAIN: "@your-telegram-username"
+      UNCIV_COUNTRY_NOK: "@your-telegram-username"
+      UNCIV_COUNTRY_EGYPT: "@your-telegram-username"
+      UNCIV_COUNTRY_ISRAEL: "@your-telegram-username"
+      TELEGRAM_BOT_TOKEN: "your-bot-token"
+      # For channels/groups use -100 prefix (e.g. -1001234567890), for private chats just the number
+      TELEGRAM_CHAT_ID: "your-chat-id"
+      OPENAI_BASE_URL: https://api.groq.com/openai/v1
+      OPENAI_API_KEY: your-api-key
+      OPENAI_MODEL: llama-3.3-70b-versatile
+      BOT_TOKEN: "1234567890:AA...-..._...TE"
       CHAT_ID: -1002512791594
       GAME_ID: "bfea7ea7-9c98-45fb-a13f-60400f9e045d"
       CHECK_INTERVAL: 25

@@ -1,0 +1,4 @@
+httpx
+python-dotenv
+openai
+deepdiff

@@ -8,3 +8,5 @@ dependencies:
   - pip:
       - httpx
       - python-dotenv
+      - deepdiff
+      - openai
